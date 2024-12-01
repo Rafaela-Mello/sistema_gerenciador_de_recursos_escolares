@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Main
 {
-    public partial class FormEdicao : Form
+    public partial class FormRelatorio : Form
     {
-        public FormEdicao()
+        public FormRelatorio()
         {
             InitializeComponent();
         }
 
-        private void btnVoltarEdicao_Click(object sender, EventArgs e)
+        private void btnVoltarCadastro_Click(object sender, EventArgs e)
         {
             this.Close();
         }

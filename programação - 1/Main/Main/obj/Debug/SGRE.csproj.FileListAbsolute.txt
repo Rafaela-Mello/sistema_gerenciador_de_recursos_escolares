@@ -22,6 +22,7 @@ C:\Users\Ryan\Desktop\SGRE\Main\Main\obj\Debug\SGRE.csproj.CoreCompileInputs.cac
 C:\Users\Ryan\Desktop\SGRE\Main\Main\obj\Debug\Main.exe
 C:\Users\Ryan\Desktop\SGRE\Main\Main\obj\Debug\Main.pdb
 C:\Users\Ryan\Desktop\SGRE\Main\Main\obj\Debug\Main.FormEdicao.resources
-C:\Users\Ryan\Desktop\SGRE\Main\Main\obj\Debug\Main.FormRemocao.resources
 C:\Users\Ryan\Desktop\SGRE\Main\Main\obj\Debug\Main.FormInventario.resources
 C:\Users\Ryan\Desktop\SGRE\Main\Main\obj\Debug\Main.FormInicio.resources
+C:\Users\Ryan\Desktop\SGRE\Main\Main\obj\Debug\Main.FormConfirmacao.resources
+C:\Users\Ryan\Desktop\SGRE\Main\Main\obj\Debug\Main.FormRelatorio.resources

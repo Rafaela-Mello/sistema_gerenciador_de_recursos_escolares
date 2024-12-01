@@ -48,17 +48,24 @@
             this.txbQuantidadeEdicao = new System.Windows.Forms.TextBox();
             this.btnPesquisarEdicao = new System.Windows.Forms.Button();
             this.pnlEdicao = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.cmbEdicao = new System.Windows.Forms.ComboBox();
+            this.btnVoltarEdicao = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.gpbTiposEdicao.SuspendLayout();
             this.gpbCategoriasEdicao.SuspendLayout();
             this.pnlEdicao.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(76, 50);
+            this.label4.Location = new System.Drawing.Point(76, 21);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(615, 39);
             this.label4.TabIndex = 9;
@@ -67,7 +74,7 @@
             // btnLimparEdicao
             // 
             this.btnLimparEdicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimparEdicao.Location = new System.Drawing.Point(416, 436);
+            this.btnLimparEdicao.Location = new System.Drawing.Point(626, 262);
             this.btnLimparEdicao.Name = "btnLimparEdicao";
             this.btnLimparEdicao.Size = new System.Drawing.Size(126, 60);
             this.btnLimparEdicao.TabIndex = 20;
@@ -77,7 +84,7 @@
             // btnConfirmarEdicao
             // 
             this.btnConfirmarEdicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmarEdicao.Location = new System.Drawing.Point(251, 436);
+            this.btnConfirmarEdicao.Location = new System.Drawing.Point(626, 164);
             this.btnConfirmarEdicao.Name = "btnConfirmarEdicao";
             this.btnConfirmarEdicao.Size = new System.Drawing.Size(126, 60);
             this.btnConfirmarEdicao.TabIndex = 19;
@@ -88,7 +95,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(174, 376);
+            this.label3.Location = new System.Drawing.Point(26, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(295, 24);
             this.label3.TabIndex = 18;
@@ -98,17 +105,17 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(174, 342);
+            this.label2.Location = new System.Drawing.Point(27, 197);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 24);
+            this.label2.Size = new System.Drawing.Size(160, 24);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Quantidade:";
+            this.label2.Text = "Quantidade Atual:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(174, 116);
+            this.label1.Location = new System.Drawing.Point(57, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 24);
             this.label1.TabIndex = 16;
@@ -121,7 +128,7 @@
             this.gpbTiposEdicao.Controls.Add(this.rdbCongeladosTiposEdicao);
             this.gpbTiposEdicao.Controls.Add(this.rdbEstocaveisTiposEdicao);
             this.gpbTiposEdicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbTiposEdicao.Location = new System.Drawing.Point(260, 16);
+            this.gpbTiposEdicao.Location = new System.Drawing.Point(279, 16);
             this.gpbTiposEdicao.Name = "gpbTiposEdicao";
             this.gpbTiposEdicao.Size = new System.Drawing.Size(200, 170);
             this.gpbTiposEdicao.TabIndex = 15;
@@ -233,7 +240,7 @@
             // txbValidadeEdicao
             // 
             this.txbValidadeEdicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbValidadeEdicao.Location = new System.Drawing.Point(475, 373);
+            this.txbValidadeEdicao.Location = new System.Drawing.Point(327, 75);
             this.txbValidadeEdicao.MaxLength = 10;
             this.txbValidadeEdicao.Name = "txbValidadeEdicao";
             this.txbValidadeEdicao.Size = new System.Drawing.Size(104, 29);
@@ -241,8 +248,9 @@
             // 
             // txbQuantidadeEdicao
             // 
+            this.txbQuantidadeEdicao.Enabled = false;
             this.txbQuantidadeEdicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbQuantidadeEdicao.Location = new System.Drawing.Point(293, 342);
+            this.txbQuantidadeEdicao.Location = new System.Drawing.Point(193, 197);
             this.txbQuantidadeEdicao.MaxLength = 3;
             this.txbQuantidadeEdicao.Name = "txbQuantidadeEdicao";
             this.txbQuantidadeEdicao.Size = new System.Drawing.Size(42, 29);
@@ -251,22 +259,65 @@
             // btnPesquisarEdicao
             // 
             this.btnPesquisarEdicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisarEdicao.Location = new System.Drawing.Point(643, 116);
+            this.btnPesquisarEdicao.Location = new System.Drawing.Point(506, 96);
             this.btnPesquisarEdicao.Name = "btnPesquisarEdicao";
-            this.btnPesquisarEdicao.Size = new System.Drawing.Size(113, 29);
+            this.btnPesquisarEdicao.Size = new System.Drawing.Size(113, 35);
             this.btnPesquisarEdicao.TabIndex = 21;
             this.btnPesquisarEdicao.Text = "Pesquisar";
             this.btnPesquisarEdicao.UseVisualStyleBackColor = true;
             // 
             // pnlEdicao
             // 
+            this.pnlEdicao.Controls.Add(this.textBox2);
+            this.pnlEdicao.Controls.Add(this.label6);
             this.pnlEdicao.Controls.Add(this.gpbCategoriasEdicao);
+            this.pnlEdicao.Controls.Add(this.txbQuantidadeEdicao);
             this.pnlEdicao.Controls.Add(this.gpbTiposEdicao);
+            this.pnlEdicao.Controls.Add(this.label2);
             this.pnlEdicao.Enabled = false;
-            this.pnlEdicao.Location = new System.Drawing.Point(147, 151);
+            this.pnlEdicao.Location = new System.Drawing.Point(58, 136);
             this.pnlEdicao.Name = "pnlEdicao";
-            this.pnlEdicao.Size = new System.Drawing.Size(507, 357);
+            this.pnlEdicao.Size = new System.Drawing.Size(544, 269);
             this.pnlEdicao.TabIndex = 22;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Enabled = false;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(328, 231);
+            this.textBox2.MaxLength = 3;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(104, 29);
+            this.textBox2.TabIndex = 18;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(27, 234);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(295, 24);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Data de Validade (DD/MM/AAAA):";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(192, 35);
+            this.textBox1.MaxLength = 3;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(42, 29);
+            this.textBox1.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(26, 35);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(160, 24);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Quantidade Atual:";
             // 
             // cmbEdicao
             // 
@@ -374,34 +425,60 @@
             "PÃO HOT DOG",
             "PÃO HOT DOG INTEGRAL",
             "PÃO DE FORMA INTEGRAL"});
-            this.cmbEdicao.Location = new System.Drawing.Point(247, 113);
+            this.cmbEdicao.Location = new System.Drawing.Point(130, 98);
             this.cmbEdicao.Name = "cmbEdicao";
             this.cmbEdicao.Size = new System.Drawing.Size(360, 32);
             this.cmbEdicao.TabIndex = 4;
+            // 
+            // btnVoltarEdicao
+            // 
+            this.btnVoltarEdicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltarEdicao.Location = new System.Drawing.Point(626, 468);
+            this.btnVoltarEdicao.Name = "btnVoltarEdicao";
+            this.btnVoltarEdicao.Size = new System.Drawing.Size(126, 60);
+            this.btnVoltarEdicao.TabIndex = 23;
+            this.btnVoltarEdicao.Text = "Voltar";
+            this.btnVoltarEdicao.UseVisualStyleBackColor = true;
+            this.btnVoltarEdicao.Click += new System.EventHandler(this.btnVoltarEdicao_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txbValidadeEdicao);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(58, 426);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(544, 127);
+            this.groupBox1.TabIndex = 24;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Novas informações";
             // 
             // FormEdicao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 553);
+            this.ClientSize = new System.Drawing.Size(785, 587);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnVoltarEdicao);
             this.Controls.Add(this.cmbEdicao);
-            this.Controls.Add(this.txbQuantidadeEdicao);
-            this.Controls.Add(this.txbValidadeEdicao);
-            this.Controls.Add(this.btnConfirmarEdicao);
             this.Controls.Add(this.btnLimparEdicao);
+            this.Controls.Add(this.btnConfirmarEdicao);
             this.Controls.Add(this.btnPesquisarEdicao);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pnlEdicao);
             this.Name = "FormEdicao";
-            this.Text = "FormEdicao";
+            this.Text = "Edição de Alimentos";
             this.gpbTiposEdicao.ResumeLayout(false);
             this.gpbTiposEdicao.PerformLayout();
             this.gpbCategoriasEdicao.ResumeLayout(false);
             this.gpbCategoriasEdicao.PerformLayout();
             this.pnlEdicao.ResumeLayout(false);
+            this.pnlEdicao.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -430,5 +507,11 @@
         private System.Windows.Forms.Button btnPesquisarEdicao;
         private System.Windows.Forms.Panel pnlEdicao;
         private System.Windows.Forms.ComboBox cmbEdicao;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnVoltarEdicao;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

@@ -47,6 +47,12 @@
   <ItemGroup>
     <Compile Include="Alimento.cs" />
     <Compile Include="Estoque.cs" />
+    <Compile Include="FormConfirmacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfirmacao.Designer.cs">
+      <DependentUpon>FormConfirmacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,11 +95,11 @@
     <Compile Include="FormCadastro.Designer.cs">
       <DependentUpon>FormCadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRemocao.cs">
+    <Compile Include="FormRelatorio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRemocao.Designer.cs">
-      <DependentUpon>FormRemocao.cs</DependentUpon>
+    <Compile Include="FormRelatorio.Designer.cs">
+      <DependentUpon>FormRelatorio.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,6 +110,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FormCadastro.resx">
       <DependentUpon>FormCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfirmacao.resx">
+      <DependentUpon>FormConfirmacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormConsulta.resx">
       <DependentUpon>FormConsulta.cs</DependentUpon>
@@ -120,8 +129,8 @@
     <EmbeddedResource Include="FormInventario.resx">
       <DependentUpon>FormInventario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRemocao.resx">
-      <DependentUpon>FormRemocao.cs</DependentUpon>
+    <EmbeddedResource Include="FormRelatorio.resx">
+      <DependentUpon>FormRelatorio.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

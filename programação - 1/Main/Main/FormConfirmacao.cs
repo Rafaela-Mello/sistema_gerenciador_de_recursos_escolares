@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Main
 {
-    public partial class FormEdicao : Form
+    public partial class FormConfirmacao : Form
     {
-        public FormEdicao()
+        public FormConfirmacao()
         {
             InitializeComponent();
         }
 
-        private void btnVoltarEdicao_Click(object sender, EventArgs e)
+        private void btnConfirmarConfirmacao_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnVoltarConfirmacao_Click(object sender, EventArgs e)
         {
             this.Close();
         }

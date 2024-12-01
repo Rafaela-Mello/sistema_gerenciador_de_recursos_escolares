@@ -45,8 +45,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnConfirmarCadastro = new System.Windows.Forms.Button();
-            this.btnVoltarCadastro = new System.Windows.Forms.Button();
             this.cmbCadastro = new System.Windows.Forms.ComboBox();
+            this.btnVoltarCadastro = new System.Windows.Forms.Button();
+            this.btnLimparCadastro = new System.Windows.Forms.Button();
             this.gpbCategoriasCadastro.SuspendLayout();
             this.gpbTiposCadastro.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +55,7 @@
             // txbQuantidadeCadastro
             // 
             this.txbQuantidadeCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbQuantidadeCadastro.Location = new System.Drawing.Point(302, 347);
+            this.txbQuantidadeCadastro.Location = new System.Drawing.Point(176, 362);
             this.txbQuantidadeCadastro.MaxLength = 3;
             this.txbQuantidadeCadastro.Name = "txbQuantidadeCadastro";
             this.txbQuantidadeCadastro.Size = new System.Drawing.Size(42, 29);
@@ -63,7 +64,7 @@
             // txbValidadeCadastro
             // 
             this.txbValidadeCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbValidadeCadastro.Location = new System.Drawing.Point(484, 378);
+            this.txbValidadeCadastro.Location = new System.Drawing.Point(358, 402);
             this.txbValidadeCadastro.MaxLength = 10;
             this.txbValidadeCadastro.Name = "txbValidadeCadastro";
             this.txbValidadeCadastro.Size = new System.Drawing.Size(104, 29);
@@ -76,7 +77,7 @@
             this.gpbCategoriasCadastro.Controls.Add(this.rdbUnidCategoriasCadastro);
             this.gpbCategoriasCadastro.Controls.Add(this.rdbPctCategoriasCadastro);
             this.gpbCategoriasCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbCategoriasCadastro.Location = new System.Drawing.Point(186, 157);
+            this.gpbCategoriasCadastro.Location = new System.Drawing.Point(60, 172);
             this.gpbCategoriasCadastro.Name = "gpbCategoriasCadastro";
             this.gpbCategoriasCadastro.Size = new System.Drawing.Size(200, 169);
             this.gpbCategoriasCadastro.TabIndex = 3;
@@ -134,7 +135,7 @@
             this.gpbTiposCadastro.Controls.Add(this.rdbCongeladosTiposCadastro);
             this.gpbTiposCadastro.Controls.Add(this.rdbEstocaveisTiposCadastro);
             this.gpbTiposCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbTiposCadastro.Location = new System.Drawing.Point(416, 157);
+            this.gpbTiposCadastro.Location = new System.Drawing.Point(290, 172);
             this.gpbTiposCadastro.Name = "gpbTiposCadastro";
             this.gpbTiposCadastro.Size = new System.Drawing.Size(200, 170);
             this.gpbTiposCadastro.TabIndex = 4;
@@ -189,7 +190,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(183, 121);
+            this.label1.Location = new System.Drawing.Point(57, 136);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 24);
             this.label1.TabIndex = 5;
@@ -199,7 +200,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(183, 347);
+            this.label2.Location = new System.Drawing.Point(57, 362);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 24);
             this.label2.TabIndex = 6;
@@ -209,7 +210,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(183, 381);
+            this.label3.Location = new System.Drawing.Point(57, 405);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(295, 24);
             this.label3.TabIndex = 7;
@@ -219,7 +220,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(76, 50);
+            this.label4.Location = new System.Drawing.Point(38, 50);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(650, 39);
             this.label4.TabIndex = 8;
@@ -228,24 +229,13 @@
             // btnConfirmarCadastro
             // 
             this.btnConfirmarCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmarCadastro.Location = new System.Drawing.Point(260, 441);
+            this.btnConfirmarCadastro.Location = new System.Drawing.Point(528, 168);
             this.btnConfirmarCadastro.Name = "btnConfirmarCadastro";
             this.btnConfirmarCadastro.Size = new System.Drawing.Size(126, 60);
             this.btnConfirmarCadastro.TabIndex = 9;
             this.btnConfirmarCadastro.Text = "Confirmar";
             this.btnConfirmarCadastro.UseVisualStyleBackColor = true;
-            this.btnConfirmarCadastro.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnVoltarCadastro
-            // 
-            this.btnVoltarCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltarCadastro.Location = new System.Drawing.Point(425, 441);
-            this.btnVoltarCadastro.Name = "btnVoltarCadastro";
-            this.btnVoltarCadastro.Size = new System.Drawing.Size(126, 60);
-            this.btnVoltarCadastro.TabIndex = 10;
-            this.btnVoltarCadastro.Text = "Limpar";
-            this.btnVoltarCadastro.UseVisualStyleBackColor = true;
-            this.btnVoltarCadastro.Click += new System.EventHandler(this.button2_Click);
+            this.btnConfirmarCadastro.Click += new System.EventHandler(this.btnConfirmarCadastro_Click);
             // 
             // cmbCadastro
             // 
@@ -353,18 +343,41 @@
             "PÃO HOT DOG",
             "PÃO HOT DOG INTEGRAL",
             "PÃO DE FORMA INTEGRAL"});
-            this.cmbCadastro.Location = new System.Drawing.Point(256, 118);
+            this.cmbCadastro.Location = new System.Drawing.Point(130, 133);
             this.cmbCadastro.Name = "cmbCadastro";
             this.cmbCadastro.Size = new System.Drawing.Size(360, 32);
             this.cmbCadastro.TabIndex = 11;
+            // 
+            // btnVoltarCadastro
+            // 
+            this.btnVoltarCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltarCadastro.Location = new System.Drawing.Point(528, 371);
+            this.btnVoltarCadastro.Name = "btnVoltarCadastro";
+            this.btnVoltarCadastro.Size = new System.Drawing.Size(126, 60);
+            this.btnVoltarCadastro.TabIndex = 12;
+            this.btnVoltarCadastro.Text = "Voltar";
+            this.btnVoltarCadastro.UseVisualStyleBackColor = true;
+            this.btnVoltarCadastro.Click += new System.EventHandler(this.btnVoltarCadastro_Click);
+            // 
+            // btnLimparCadastro
+            // 
+            this.btnLimparCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimparCadastro.Location = new System.Drawing.Point(528, 239);
+            this.btnLimparCadastro.Name = "btnLimparCadastro";
+            this.btnLimparCadastro.Size = new System.Drawing.Size(126, 60);
+            this.btnLimparCadastro.TabIndex = 13;
+            this.btnLimparCadastro.Text = "Limpar";
+            this.btnLimparCadastro.UseVisualStyleBackColor = true;
+            this.btnLimparCadastro.Click += new System.EventHandler(this.btnLimparCadastro_Click);
             // 
             // FormCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 553);
-            this.Controls.Add(this.cmbCadastro);
+            this.ClientSize = new System.Drawing.Size(711, 485);
+            this.Controls.Add(this.btnLimparCadastro);
             this.Controls.Add(this.btnVoltarCadastro);
+            this.Controls.Add(this.cmbCadastro);
             this.Controls.Add(this.btnConfirmarCadastro);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -375,7 +388,7 @@
             this.Controls.Add(this.txbValidadeCadastro);
             this.Controls.Add(this.txbQuantidadeCadastro);
             this.Name = "FormCadastro";
-            this.Text = "Form2";
+            this.Text = "Cadastro de Alimentos";
             this.gpbCategoriasCadastro.ResumeLayout(false);
             this.gpbCategoriasCadastro.PerformLayout();
             this.gpbTiposCadastro.ResumeLayout(false);
@@ -403,7 +416,8 @@
         private System.Windows.Forms.RadioButton rdbCongeladosTiposCadastro;
         private System.Windows.Forms.RadioButton rdbEstocaveisTiposCadastro;
         private System.Windows.Forms.Button btnConfirmarCadastro;
-        private System.Windows.Forms.Button btnVoltarCadastro;
         private System.Windows.Forms.ComboBox cmbCadastro;
+        private System.Windows.Forms.Button btnVoltarCadastro;
+        private System.Windows.Forms.Button btnLimparCadastro;
     }
 }

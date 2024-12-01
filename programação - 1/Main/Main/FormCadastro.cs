@@ -19,20 +19,29 @@ namespace Main
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnConfirmarCadastro_Click(object sender, EventArgs e)
         {
             string nome = cmbCadastro.Text;
             int quantidade = int.Parse(txbQuantidadeCadastro.Text);
             int categoria = 1;
             int validade = 2;
             int tipo = 3;
+            FormConfirmacao formConfirmacao = new FormConfirmacao();
+            formConfirmacao.ShowDialog();
             estoque.adicionarAlimento(new Alimento (nome, quantidade, categoria, validade, tipo));
             MessageBox.Show("Alimento cadastrado com sucesso");
+            
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnLimparCadastro_Click(object sender, EventArgs e)
         {
             estoque.retornaAlimentos();
         }
+
+        private void btnVoltarCadastro_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

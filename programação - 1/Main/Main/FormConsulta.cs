@@ -19,11 +19,20 @@ namespace Main
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(radioButton2.Checked = true)
+            if(radioButton1.Checked == true)
+            {
+
+            }
+            else if(radioButton2.Checked == true)
             {
                 FormConsultaAoTodo formConsultaAoTodo = new FormConsultaAoTodo();
                 formConsultaAoTodo.ShowDialog();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

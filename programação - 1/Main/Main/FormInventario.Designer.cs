@@ -33,11 +33,11 @@
             this.btnVoltar = new System.Windows.Forms.Button();
             this.rdbCasdratro = new System.Windows.Forms.RadioButton();
             this.rdbEdicao = new System.Windows.Forms.RadioButton();
-            this.rdbRemocao = new System.Windows.Forms.RadioButton();
             this.rdbConsulta = new System.Windows.Forms.RadioButton();
             this.rdbRelatorio = new System.Windows.Forms.RadioButton();
             this.rdbHistorico = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -53,7 +53,7 @@
             // btnConfirmar
             // 
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.Location = new System.Drawing.Point(424, 136);
+            this.btnConfirmar.Location = new System.Drawing.Point(433, 121);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(119, 54);
             this.btnConfirmar.TabIndex = 4;
@@ -64,7 +64,7 @@
             // btnVoltar
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(424, 252);
+            this.btnVoltar.Location = new System.Drawing.Point(433, 230);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(119, 54);
             this.btnVoltar.TabIndex = 5;
@@ -76,7 +76,7 @@
             // 
             this.rdbCasdratro.AutoSize = true;
             this.rdbCasdratro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbCasdratro.Location = new System.Drawing.Point(39, 116);
+            this.rdbCasdratro.Location = new System.Drawing.Point(27, 17);
             this.rdbCasdratro.Name = "rdbCasdratro";
             this.rdbCasdratro.Size = new System.Drawing.Size(186, 28);
             this.rdbCasdratro.TabIndex = 0;
@@ -88,7 +88,7 @@
             // 
             this.rdbEdicao.AutoSize = true;
             this.rdbEdicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbEdicao.Location = new System.Drawing.Point(39, 149);
+            this.rdbEdicao.Location = new System.Drawing.Point(27, 50);
             this.rdbEdicao.Name = "rdbEdicao";
             this.rdbEdicao.Size = new System.Drawing.Size(155, 28);
             this.rdbEdicao.TabIndex = 1;
@@ -96,23 +96,11 @@
             this.rdbEdicao.Text = "Editar Alimento";
             this.rdbEdicao.UseVisualStyleBackColor = true;
             // 
-            // rdbRemocao
-            // 
-            this.rdbRemocao.AutoSize = true;
-            this.rdbRemocao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbRemocao.Location = new System.Drawing.Point(39, 184);
-            this.rdbRemocao.Name = "rdbRemocao";
-            this.rdbRemocao.Size = new System.Drawing.Size(184, 28);
-            this.rdbRemocao.TabIndex = 2;
-            this.rdbRemocao.TabStop = true;
-            this.rdbRemocao.Text = "Remover Alimento";
-            this.rdbRemocao.UseVisualStyleBackColor = true;
-            // 
             // rdbConsulta
             // 
             this.rdbConsulta.AutoSize = true;
             this.rdbConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbConsulta.Location = new System.Drawing.Point(39, 218);
+            this.rdbConsulta.Location = new System.Drawing.Point(27, 84);
             this.rdbConsulta.Name = "rdbConsulta";
             this.rdbConsulta.Size = new System.Drawing.Size(186, 28);
             this.rdbConsulta.TabIndex = 3;
@@ -124,7 +112,7 @@
             // 
             this.rdbRelatorio.AutoSize = true;
             this.rdbRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbRelatorio.Location = new System.Drawing.Point(39, 252);
+            this.rdbRelatorio.Location = new System.Drawing.Point(27, 118);
             this.rdbRelatorio.Name = "rdbRelatorio";
             this.rdbRelatorio.Size = new System.Drawing.Size(280, 28);
             this.rdbRelatorio.TabIndex = 4;
@@ -136,7 +124,7 @@
             // 
             this.rdbHistorico.AutoSize = true;
             this.rdbHistorico.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbHistorico.Location = new System.Drawing.Point(39, 286);
+            this.rdbHistorico.Location = new System.Drawing.Point(27, 152);
             this.rdbHistorico.Name = "rdbHistorico";
             this.rdbHistorico.Size = new System.Drawing.Size(256, 28);
             this.rdbHistorico.TabIndex = 5;
@@ -146,28 +134,29 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(12, 104);
+            this.panel1.Controls.Add(this.rdbEdicao);
+            this.panel1.Controls.Add(this.rdbCasdratro);
+            this.panel1.Controls.Add(this.rdbHistorico);
+            this.panel1.Controls.Add(this.rdbConsulta);
+            this.panel1.Controls.Add(this.rdbRelatorio);
+            this.panel1.Location = new System.Drawing.Point(23, 104);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(317, 246);
+            this.panel1.Size = new System.Drawing.Size(321, 195);
             this.panel1.TabIndex = 6;
             // 
             // FormInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(631, 413);
-            this.Controls.Add(this.rdbHistorico);
+            this.ClientSize = new System.Drawing.Size(631, 354);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.rdbRelatorio);
             this.Controls.Add(this.btnConfirmar);
-            this.Controls.Add(this.rdbConsulta);
-            this.Controls.Add(this.rdbRemocao);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.rdbEdicao);
-            this.Controls.Add(this.rdbCasdratro);
             this.Controls.Add(this.panel1);
             this.Name = "FormInventario";
             this.Text = "Controle Diário de Estoque de Alimentos";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,7 +168,6 @@
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.RadioButton rdbCasdratro;
         private System.Windows.Forms.RadioButton rdbEdicao;
-        private System.Windows.Forms.RadioButton rdbRemocao;
         private System.Windows.Forms.RadioButton rdbConsulta;
         private System.Windows.Forms.RadioButton rdbRelatorio;
         private System.Windows.Forms.RadioButton rdbHistorico;

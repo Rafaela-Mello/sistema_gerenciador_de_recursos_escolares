@@ -24,10 +24,20 @@ namespace Main
                 FormCadastro formCadastro = new FormCadastro();
                 formCadastro.ShowDialog();
             }
+            else if (rdbEdicao.Checked == true)
+            {
+                FormEdicao formEdicao = new FormEdicao();
+                formEdicao.ShowDialog();
+            }
             else if (rdbConsulta.Checked == true)
             {
                 FormConsulta formConsulta = new FormConsulta();
                 formConsulta.ShowDialog();
+            }
+            else if(rdbRelatorio.Checked == true)
+            {
+                FormRelatorio formRelatorio = new FormRelatorio();
+                formRelatorio.ShowDialog();
             }
         }
 
