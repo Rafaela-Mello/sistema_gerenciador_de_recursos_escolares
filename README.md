@@ -21,11 +21,7 @@ A aplicação consiste em gerenciar a demanda e o estoque de alimentos fornecido
 - Banco de dados: MySQL
 
 ## Discentes
+- Igor Dias Modesto
 - Jean Carlo Silva de Macedo
-- Midian Goncalves Mandauba
 - Rafaela Laryssa Mello Neto
 - Ryan Davi Oliveira de Meneses
-- Sophia Ferreira Boonen
-- Igor Dias Modesto
-- Marlene Vasconcelos Moraes de Oliveira
-
