@@ -15,7 +15,7 @@ A aplicação consiste em gerenciar a demanda e o estoque de alimentos fornecido
 - C
 - Code::Blocks
 
-## Discentes
+## Integrantes
 - Jean Carlo Silva de Macedo
 - Midian Gonçalves Mandaúba
 - Rafaela Laryssa Mello Neto
