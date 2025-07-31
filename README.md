@@ -2,8 +2,7 @@
 
 ## Sobre o projeto
 
-Sistema Gerenciador de Recursos Escolares (SGRE) é um projeto de extensão de uma aplicação em C/C# construída durante as disciplinas **Gestão de Projetos** (linguagem C) e **Projeto de Extensão 1**, do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - [IFSP Campus Campinas](https://github.com/IFSP-Campus-Campinas-TADS).
-
+Sistema Gerenciador de Recursos Escolares (SGRE) é um projeto de extensão de uma aplicação em C construída durante as disciplinas **Gestão de Projetos**, do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - [IFSP Campus Campinas](https://github.com/IFSP-Campus-Campinas-TADS).
 
 ### Objetivos
 
@@ -13,15 +12,13 @@ A aplicação consiste em gerenciar a demanda e o estoque de alimentos fornecido
 - Garantir a adesão e a aceitação dos usuários finais de forma adequada durante o engajamento de todo o processo de implementação.
 
 ## Tecnologias utilizadas
-### Back end
-- C#
-- .NET 6
-
-### Implantação em produção
-- Banco de dados: MySQL
+### BackEnd
+- C
+- Code::Blocks
 
 ## Discentes
-- Igor Dias Modesto
 - Jean Carlo Silva de Macedo
+- Midian Gonçalves Mandaúba
 - Rafaela Laryssa Mello Neto
 - Ryan Davi Oliveira de Meneses
+- Sophia Ferreira Boonen
