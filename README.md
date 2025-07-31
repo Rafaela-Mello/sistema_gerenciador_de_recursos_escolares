@@ -12,7 +12,6 @@ A aplicação consiste em gerenciar a demanda e o estoque de alimentos fornecido
 - Garantir a adesão e a aceitação dos usuários finais de forma adequada durante o engajamento de todo o processo de implementação.
 
 ## Tecnologias utilizadas
-### BackEnd
 - C
 - Code::Blocks
 
